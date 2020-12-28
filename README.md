@@ -5,7 +5,7 @@
  ![Responsiv](responsiv.gif)
  
 ## Link<br>
-Linken er i behandling og skal være oppe å gå om kort tid
+Linken er i behandling og skal være oppe å gå om kort tid<br>
 nzt-48.great-site.net
  
 ## Bildekilder<br>
