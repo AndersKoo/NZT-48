@@ -1,0 +1,466 @@
+:root {
+  --fs-main: 1.25rem;
+  --br: 1rem;
+  --white: white;
+  --black: black;
+  --grey: grey;
+  --ff-jet: "JetBrains Mono";
+  --clr-main: #ae00f2;
+
+  @font-face {
+    font-family: "JetBrains Mono";
+    font-style: normal;
+    font-weight: 400;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dd,
+figure,
+form {
+  margin: 0;
+  font-family: var(--ff-jet);
+}
+
+body {
+  line-height: 1.3;
+  font-family: var(--ff-jet);
+  font-size: var(--fs-main);
+  font-weight: 300;
+  background-color: black;
+  overflow: hidden;
+}
+
+/*
+Title: Animations for interactive elements #2
+Source: https://codepen.io/melnik909/pen/pQEazE
+*/
+
+.ai-element {
+  --uiaiElementDisplay: var(--aiElementDisplay, inline-flex);
+  --uiaiElementPadding: var(
+    --aiElementPadding,
+    var(--aiElementPaddingTop, 0) var(--aiElementPaddingRight, 0)
+      var(--aiElementPaddingBottom, 0) var(--aiElementPaddingLeft, 0)
+  );
+  --uiaiElementColor: var(--aiElementColor);
+
+  display: var(--uiaiElementDisplay);
+  position: relative;
+  overflow: hidden;
+}
+
+/********** VERTICAL BORDERS ON BUTTON **********/
+
+.ai-element_type1 {
+  --uiaiElementLineWeight: var(--aiElementLineWeight, 2px);
+  --uiaiElementLineColor: var(--aiElementLineColor, var(--clr-main));
+}
+
+.ai-element_type1::before,
+.ai-element_type1::after {
+  width: 100%;
+  height: var(--uiaiElementLineWeight);
+  left: 0;
+}
+
+.ai-element_type1::before {
+  top: 0;
+}
+
+.ai-element_type1::after {
+  bottom: 0;
+}
+
+/********** HORIZONTAL BORDERS ON BUTTON **********/
+
+.ai-element_type1 .ai-element__label::before,
+.ai-element_type1 .ai-element__label::after {
+  width: var(--uiaiElementLineWeight);
+  height: 100%;
+  top: 0;
+}
+
+.ai-element_type1 .ai-element__label::before {
+  left: 0;
+}
+
+.ai-element_type1 .ai-element__label::after {
+  right: 0;
+}
+
+.ai-element_type1::before,
+.ai-element_type1::after,
+.ai-element_type1 .ai-element__label::before,
+.ai-element_type1 .ai-element__label::after {
+  content: "";
+  background-color: var(--clr-main);
+  position: absolute;
+  opacity: 1;
+  will-change: transform, opacity;
+  transition-property: transform, opacity;
+}
+
+/****** TRANSITION EFFECT 1: hover -> complete ******/
+
+.ai-element1::before,
+.ai-element1::after,
+.ai-element1 .ai-element__label::before,
+.ai-element1 .ai-element__label::after {
+  transform: translate3d(0, 0, 0);
+  transition-timing-function: ease-out;
+  transition-duration: 0.2s, 0.15s;
+}
+
+.ai-element1:hover::before,
+.ai-element1:hover::after,
+.ai-element1:hover .ai-element__label::before,
+.ai-element1:hover .ai-element__label::after {
+  transition-duration: 0.25s;
+}
+
+.ai-element1:hover::before {
+  transform: translate3d(-105%, 0, 0);
+}
+
+.ai-element1:hover::after {
+  transform: translate3d(105%, 0, 0);
+}
+
+.ai-element1:hover .ai-element__label::before {
+  transform: translate3d(0%, -100%, 0);
+}
+
+.ai-element1:hover .ai-element__label::after {
+  transform: translate3d(0%, 100%, 0);
+}
+
+.wrapper {
+  max-width: 55rem;
+  margin: 0 auto;
+}
+
+/*
+Title: Center logo in navbar Perfect Coding (Most people do it wrong way)
+Source: https://www.youtube.com/watch?v=hp-LP8Nv18s&list=LL&index=11
+*/
+
+.inner_main_menu {
+  margin: 0 auto;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  position: fixed;
+}
+
+.inner_main_menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: right;
+}
+
+.inner_main_menu ul li {
+  float: none;
+  display: inline-block;
+}
+
+.inner_main_menu li:nth-child(1) {
+  float: left;
+  margin-left: 3px;
+}
+
+.inner_main_menu li:nth-child(2) {
+  float: left;
+  margin-left: 3px;
+}
+
+.inner_main_menu ul li a {
+  padding: 10px 20px;
+}
+
+/* ---------------------------------------------- */
+
+.nav-list a {
+  font-family: var(--ff-jet);
+  text-decoration: none;
+  background-color: transparent;
+  color: var(--clr-main);
+  letter-spacing: 2px;
+  margin: 4px 2px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 3px;
+
+  padding: 0px 2px;
+  word-wrap: normal;
+  display: inline-block;
+}
+
+#home strong {
+  color: var(--clr-main);
+}
+
+#apply-for-prescription strong {
+  color: var(--clr-main);
+}
+
+#info strong {
+  color: var(--clr-main);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*
+Title: Landing Page With Smooth Scroll - 3 Options
+Source: https://www.youtube.com/watch?v=y9nlfqT4s9s
+*/
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+section#home {
+  background: url("https://cdna.artstation.com/p/assets/images/images/014/391/726/large/alfred-dagher-alfreddoozz-nzt-48-1-11001542-k8hf.jpg?1543794115")
+      center / cover,
+    0 0 no-repeat,
+    radial-gradient(
+      ellipse at center,
+      rgba(0, 0, 0, 0.5) 10%,
+      rgba(0, 0, 0, 3) 90%
+    );
+
+  width: 100%;
+  background-blend-mode: multiply;
+}
+
+section#info {
+  background-color: var(--white);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 700px) {
+  section#info {
+    flex-direction: row;
+  }
+}
+
+section#apply {
+  background-color: var(--black);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 700px) {
+  section#apply {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+section#apply-for-prescription {
+  background-color: var(--white);
+}
+
+/* ---------------------------------------------- */
+
+/*
+Title: Input Animations With HTML And CSS
+Source: https://www.youtube.com/watch?v=IxRJ8vplzAo 
+*/
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 700px) {
+  .form-container {
+    flex-direction: row;
+  }
+}
+.form {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.form input {
+  width: 100%;
+  height: 100%;
+  color: grey;
+  padding-top: 40px;
+  border: none;
+  outline: none;
+}
+
+.form label {
+  position: absolute;
+  left: 0;
+  width: 120px;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.form label::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  bottom: -1px;
+  border-bottom: 3px solid var(--clr-main);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.form input:focus + .label-name .content-name,
+.form input:not(:placeholder-shown) + .label-name .content-name {
+  transform: translateY(-150%);
+  font-size: 10px;
+  color: var(--clr-main);
+}
+
+.form input:focus + .label-name::after,
+.form input:not(:placeholder-shown) + .label-name::after {
+  transform: translateX(0%);
+}
+
+.content-email {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.form input:focus + .label-email .content-email,
+.form input:not(:placeholder-shown) + .label-email .content-email {
+  transform: translateY(-150%);
+  font-size: 10px;
+  color: var(--clr-main);
+}
+
+.form input:focus + .label-email::after,
+.form input:not(:placeholder-shown) + .label-email::after {
+  transform: translateX(0%);
+}
+
+/* ---------------------------------------------- */
+
+.formula {
+  width: 400px;
+  margin-right: auto;
+  margin-left: 150px;
+}
+
+.brain {
+  width: 500px;
+  margin-left: 2em;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -2rem;
+  font-size: 10rem;
+}
+.section-title {
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.improvements-info {
+  font-family: var(--ff-jet);
+  font-size: 2em;
+  color: var(--white);
+  list-style-type: none;
+  text-align: left;
+  text-decoration: none;
+}
+
+section#apply-for-prescription > h1 {
+  margin-bottom: 1em;
+  font-size: 70px;
+}
+
+@media (min-width: 700px) {
+  section#apply-for-prescription > h1 {
+    font-size: 120px;
+  }
+}
+
+section#apply-for-prescription form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 700px) {
+  section#apply-for-prescription form {
+    flex-direction: row;
+  }
+}
+
+.btn {
+  border: none;
+  color: white;
+  font-family: var(--ff-jet);
+  background-color: var(--clr-main);
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+@media (min-width: 700px) {
+  .btn {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--clr-main);
+  color: white;
+  text-align: center;
+}
