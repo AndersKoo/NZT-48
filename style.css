@@ -153,6 +153,13 @@ Source: https://codepen.io/melnik909/pen/pQEazE
 .wrapper {
   max-width: 55rem;
   margin: 0 auto;
+  font-size: 15px;
+}
+
+@media (min-width: 700px) {
+  .wrapper {
+    font-size: 20px;
+  }
 }
 
 /*
@@ -204,12 +211,20 @@ Source: https://www.youtube.com/watch?v=hp-LP8Nv18s&list=LL&index=11
   letter-spacing: 2px;
   margin: 4px 2px;
   text-align: center;
-  font-size: 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
   border-radius: 3px;
 
   padding: 0px 2px;
   word-wrap: normal;
   display: inline-block;
+}
+
+@media (min-width: 700px) {
+  .nav-list a {
+    font-size: 15px;
+  }
 }
 
 #home strong {
@@ -385,14 +400,26 @@ Source: https://www.youtube.com/watch?v=IxRJ8vplzAo
 /* ---------------------------------------------- */
 
 .formula {
-  width: 400px;
+  width: 200px;
   margin-right: auto;
   margin-left: 150px;
 }
 
+@media (min-width: 700px) {
+  .formula {
+    width: 400px;
+  }
+}
+
 .brain {
-  width: 500px;
+  width: 300px;
   margin-left: 2em;
+}
+
+@media (min-width: 700px) {
+  .brain {
+    width: 500px;
+  }
 }
 
 h1 {
@@ -408,11 +435,17 @@ h1 {
 
 .improvements-info {
   font-family: var(--ff-jet);
-  font-size: 2em;
+  font-size: 1em;
   color: var(--white);
   list-style-type: none;
   text-align: left;
   text-decoration: none;
+}
+
+@media (min-width: 700px) {
+  .improvements-info {
+    font-size: 2em;
+  }
 }
 
 section#apply-for-prescription > h1 {
