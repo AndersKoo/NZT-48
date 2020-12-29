@@ -5,8 +5,7 @@
  ![Responsiv](responsiv.gif)
  
 ## Link<br>
-Linken er i behandling og skal være oppe å gå om kort tid<br>
-nzt-48.great-site.net
+nzt-48.great-site.net<br>
  
 ## Bildekilder<br>
 https://en.wikipedia.org/wiki/Modafinil#/media/File:Modafinil.svg<br>
