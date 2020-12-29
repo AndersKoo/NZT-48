@@ -5,7 +5,7 @@
  ![Responsiv](responsiv.gif)
  
 ## Link<br>
-nzt-48.great-site.net<br>
+http://nzt-48.great-site.net<br>
  
 ## Bildekilder<br>
 https://en.wikipedia.org/wiki/Modafinil#/media/File:Modafinil.svg<br>
