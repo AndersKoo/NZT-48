@@ -1,9 +1,6 @@
 ## Landingsside<br>
  ![Landingsside](landingpage.gif)
  
-## Responsiv<br>
- ![Responsiv](responsiv.gif)
- 
 ## Link<br>
 http://nzt-48.great-site.net<br>
  
