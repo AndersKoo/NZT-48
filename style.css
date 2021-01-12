@@ -334,7 +334,7 @@ Source: https://www.youtube.com/watch?v=IxRJ8vplzAo
 .form input {
   width: 100%;
   height: 100%;
-  color: grey;
+  color: var(--grey);;
   padding-top: 40px;
   border: none;
   outline: none;
@@ -346,7 +346,7 @@ Source: https://www.youtube.com/watch?v=IxRJ8vplzAo
   width: 120px;
   height: 100%;
   pointer-events: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--black);;
 }
 
 .form label::after {
@@ -474,7 +474,7 @@ section#apply-for-prescription form {
 
 .btn {
   border: none;
-  color: white;
+  color: var(--white);
   font-family: var(--ff-jet);
   background-color: var(--clr-main);
   border-radius: 10px;
@@ -496,6 +496,6 @@ section#apply-for-prescription form {
   bottom: 0;
   width: 100%;
   background-color: var(--clr-main);
-  color: white;
+  color: var(--white);
   text-align: center;
 }
