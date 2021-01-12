@@ -205,7 +205,7 @@ Source: https://www.youtube.com/watch?v=hp-LP8Nv18s&list=LL&index=11
   padding: 10px 20px;
 }
 
-/* ---------------------------------------------- */
+/*  */
 
 .nav-list a {
   font-family: var(--ff-jet);
@@ -309,8 +309,6 @@ section#apply {
 section#apply-for-prescription {
   background-color: var(--white);
 }
-
-/* ---------------------------------------------- */
 
 /*
 Title: Input Animations With HTML And CSS
