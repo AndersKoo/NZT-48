@@ -475,7 +475,7 @@ h1 {
 
 .improvements-info {
   font-family: var(--ff-jet);
-  font-size: 1em;
+  font-size: 2em;
   color: var(--white);
   list-style-type: none;
   text-align: left;
