@@ -10,4 +10,6 @@ https://www.artstation.com/artwork/3oqyZ2<br>
 https://medicalxpress.com/news/2017-03-doctors-patient-brain-minutes-death.html<br>
 
 ## Kilder<br>
-https://cssdemystified.com/
+https://cssdemystified.com/<br>
+Animate On Scroll Webpage | AOS Library<br>
+https://www.youtube.com/watch?v=ptfUwPJbGlQ<br>
