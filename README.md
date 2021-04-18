@@ -8,8 +8,7 @@
 Teknologier: HTML, Custom properties (CSS), JavaScript, Animate on Scroll (AOS), CSS-animasjoner<br>
 
 Inspirert av filmen Limitless (2011) utviklet jeg en landingsside for pillen NZT-48 (modafinil). <br>
-For å fange oppmerksomhet valgte jeg et lilla fargetema med tekst-animasjon fra Tobias Ahlin.<br> 
-Animate on Scroll (AOS) har jeg lært fra Traversy Media og Dev Ed for CSS animasjoner.<br>
+For å fange oppmerksomhet valgte jeg et lilla fargetema med tekst-animasjon.<br>
 
 I denne prosessen lærte jeg:<br>
 
@@ -31,3 +30,7 @@ https://medicalxpress.com/news/2017-03-doctors-patient-brain-minutes-death.html<
 https://cssdemystified.com/<br>
 Animate On Scroll Webpage | AOS Library<br>
 https://www.youtube.com/watch?v=ptfUwPJbGlQ<br>
+Input Animations With HTML And CSS<br>
+https://www.youtube.com/watch?v=IxRJ8vplzAo<br>
+Moving Letters (Effect 15)<br>
+https://tobiasahlin.com/moving-letters/#15
